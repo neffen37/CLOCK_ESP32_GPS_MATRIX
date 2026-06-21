@@ -4,11 +4,11 @@
 > sur fils Dupont). Un **PCB dédié** est en cours de conception et remplacera le
 > câblage actuel. Le brochage pourra évoluer en conséquence.
 
-Horloge murale **384×64 px** (3 panneaux LED HUB75 P2.5) pilotée par un module
-GPS et son signal **PPS**, qui fait aussi office de **serveur NTP stratum-1** sur
-le réseau local. Affichage de l'heure locale, de l'heure UTC, de quatre fuseaux
-au choix et de la température locale (open-meteo), le tout réglable depuis un
-tableau de bord web.
+Horloge murale **384×64 px** (3 panneaux LED HUB75 P2.5 de 320×160 mm chacun,
+soit 128×64 px par panneau) pilotée par un module GPS et son signal **PPS**, qui 
+fait aussi office de **serveur NTP stratum-1** sur le réseau local. Affichage de 
+l'heure locale, de l'heure UTC, de quatre fuseaux au choix et de la température 
+locale (open-meteo), le tout réglable depuis un tableau de bord web.
 
 ![Horloge GPS — vue de face](docs/01-face.jpg)
 
@@ -36,7 +36,7 @@ tableau de bord web.
 | Élément | Détail |
 |---|---|
 | MCU | ESP32-S3 DevKitC-1 (N16R8 ou équivalent) |
-| Affichage | 3 × panneau HUB75 **P2.5 128×64** chaînés (driver FM6126A) |
+| Affichage | 3 × panneau HUB75 **P2.5** 320×160 mm (**128×64 px** chacun) chaînés — 384×64 px au total, driver FM6126A |
 | Réseau | Module Ethernet **W5500** (SPI) |
 | Temps | Module GPS avec sortie **PPS** (NMEA 9600 bauds) |
 | Alim | 5 V — prévoir l'ampérage pour 3 panneaux (compter ~4 A crête) |
